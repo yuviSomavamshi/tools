@@ -1,0 +1,452 @@
+{
+    "numSetup": "1",
+    "technology": "5g_nsa",
+    "setups": [
+        {
+            "lteSetup": {
+                "common": {
+                    "deploymentMode": "field",
+                    "sgwAddress": "fd02:298c:8dfe:3006::1c",
+                    "appServerAddress": "fd02:298c:8dfe:384:7::2005",
+                    "appServerGateway": "fd02:298c:8dfe:3012::1",
+                    "epcPDNAddress": "fd02:298c:8dfe:3012::90",
+                    "vbbuAddress": "fd02:298c:8dfe:3012::90",
+                    "muceAddress": "172.70.1.1",
+                    "mobileCountryCode": "111",
+                    "mobileNetworkCode": "111",
+                    "ueIdDigits": "4",
+                    "mobileStationIdentityNumber": "5300",
+                    "milenageAlgorithm": true,
+                    "zeroNasIntegriy": true,
+                    "masterKey": "00000000000000000000000000000001",
+                    "operatorVariant": "00000000000000000000000000000123",
+                    "authenticationManagementField": "8001",
+                    "homeMobileCountryCode": "111",
+                    "homeMobileNetworkCode": "111",
+                    "accessPointName": "asn.lte1",
+                    "sourceMinPorts": "10000",
+                    "sourceMaxPorts": "20000",
+                    "dstMinPorts": "10000",
+                    "dstMaxPorts": "20000",
+                    "prefixLength": "0",
+                    "isIPv6Prefix": "0",
+                    "interfaceType": "0",
+                    "bandEutra": "3",
+                    "dlErafcn": "1574",
+                    "physicalCellId": "123",
+                    "pdcpDataOptimization": false,
+                    "retryFailedSectors": true,
+                    "ttgEnabled": true,
+                    "vcuRestartEnabled": true,
+                    "oamCallSupport": false,
+                    "caSupported": false,
+                    "irrhDeviceType": "JSER0011",
+                    "ueIPNetwork": "fd52:a7fd:a445:7e24::",
+                    "ueIPPrefixLength": "64",
+                    "preferredPDNType": "0",
+                    "calculateUDPChecksum": false,
+                    "uePDNMask": "255.255.0.0",
+                    "epcPDNInterface": "ens5",
+                    "toolPDNNetwork": "172.90.0.0",
+                    "ipfhType": "6",
+                    "vcuType": "1",
+                    "macroOrCollocated": false,
+                    "gtpTunnelMode": "0",
+                    "gtpUplinkForwarding": "1",
+                    "executionTime": "15",
+                    "pingUEFromTTG": false,
+                    "vcuMultiVLANSupported": false,
+                    "terminationMode": "2",
+                    "mucePDNAddress": "172.70.1.1",
+                    "vcuPlatformType": "1",
+                    "bandNR": "257",
+                    "randomSplitRatio": "0",
+                    "splitRatio": "20",
+                    "hikeSplitRatio": "0",
+                    "numSectorSplitRatio": "0",
+                    "endcUEThreshold": "0",
+                    "bbuType": "1",
+                    "cpsimInterface": {
+                        "isIPV6": true,
+                        "cpsimAddress": "fd02:298c:8dfe:313:f816:3eff:fef5:2215",
+                        "cpsimStartPort": "32000",
+                        "muceAddress": "fd02:298c:8dfe:313:f816:3eff:feca:8d6d",
+                        "muceStartPort": "60000"
+                    },
+                    "upsimInterface": {
+                        "isIPV6": true,
+                        "upPDCPAddress": "fd02:298c:8dfe:312::9067",
+                        "upsimVDUStartPort": "60000",
+                        "vduPDCPAddress": "fd02:298c:8dfe:312::9077",
+                        "vduUPSimStartPort": "60000"
+                    },
+                    "operationMode": "0",
+                    "scriptServerAddress": "fd02:298c:8dfe:384:7::2003",
+                    "ueidGlobalStart": "0",
+                    "numberSectors": "1",
+                    "procTimeout": "2000"
+                },
+                "nodes": [
+                    {
+                        "vcuManagementAddress": "fd02:298c:8dfe:384:7::2065",
+                        "vcuEPCInterface": "eth2",
+                        "vcuInterface": "eth1",
+                        "vduTACManagementAddress": "fd02:298c:8dfe:384:7::201e",
+                        "vduRRHInterface": "ens5",
+                        "vduRRHAddress": "fd02:298c:8dfe:419:3:0:100:200",
+                        "vduMUCEInterface": "lo",
+                        "vduUEPerCell": "16",
+                        "vduNumRealRRH": "71",
+                        "clusterManagementAddress": "fd02:298c:8dfe:384:7::201e",
+                        "tacTTGAddress": "fd02:298c:8dfe:384:7::201e",
+                        "fieldTTGNodeUL": {
+                            "config": {
+                                "tacAddress": "10.21.104.182",
+                                "appServerAddress": "",
+                                "ttgAddress": "10.21.104.182",
+                                "epcPDNAddress": "10.21.7.160",
+                                "uePerCell": "100",
+                                "connPerUE": "1",
+                                "pdnType": "2",
+                                "groups": [
+                                    {
+                                        "numTTG": "1",
+                                        "mbtaConfig": [
+                                            {
+                                                "protocolType": "1",
+                                                "transportType": "4",
+                                                "schedulerType": "1",
+                                                "sourceStartPort": "20000",
+                                                "destinationStartPort": "20000",
+                                                "packetLength": "1200",
+                                                "throughput": "10",
+                                                "terminationPort": "20000"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "numTTG": "0",
+                                        "mbtaConfig": [
+                                            {
+                                                "protocolType": "2",
+                                                "transportType": "2",
+                                                "schedulerType": "1",
+                                                "sourceStartPort": "20000",
+                                                "destinationStartPort": "20000",
+                                                "packetLength": "1350",
+                                                "throughput": "30",
+                                                "terminationPort": "20000"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "tcpConfig": {
+                                    "tunPrimaryAddress": "10.1.1.2",
+                                    "ttgPrimaryAddress": "10.1.1.3",
+                                    "maxPollEvents": "30",
+                                    "bufferSize": "6000",
+                                    "writeMode": "0"
+                                },
+                                "throughputHike": "0",
+                                "overloadedHike": "0",
+                                "isIPV6": "1"
+                            }
+                        },
+                        "fieldTTGNodeDL": {
+                            "config": {
+                                "tacAddress": "10.21.104.182",
+                                "appServerAddress": "172.80.1.1",
+                                "ttgAddress": "",
+                                "epcPDNAddress": "10.21.7.160",
+                                "uePerCell": "100",
+                                "connPerUE": "1",
+                                "pdnType": "1",
+                                "groups": [
+                                    {
+                                        "numTTG": "1",
+                                        "mbtaConfig": [
+                                            {
+                                                "protocolType": "1",
+                                                "transportType": "1",
+                                                "schedulerType": "1",
+                                                "sourceStartPort": "30000",
+                                                "destinationStartPort": "20000",
+                                                "packetLength": "1200",
+                                                "throughput": "20",
+                                                "terminationPort": "20000"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "numTTG": "0",
+                                        "mbtaConfig": [
+                                            {
+                                                "protocolType": "2",
+                                                "transportType": "2",
+                                                "schedulerType": "1",
+                                                "sourceStartPort": "20000",
+                                                "destinationStartPort": "20000",
+                                                "packetLength": "1300",
+                                                "throughput": "120",
+                                                "terminationPort": "20000"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "tcpConfig": {
+                                    "tunPrimaryAddress": "10.1.1.2",
+                                    "ttgPrimaryAddress": "10.1.1.3",
+                                    "maxPollEvents": "30",
+                                    "bufferSize": "6000",
+                                    "writeMode": "0"
+                                },
+                                "throughputHike": "0",
+                                "overloadedHike": "0",
+                                "isIPV6": "1"
+                            }
+                        }
+                    }
+                ]
+            },
+            "endcSetup": {
+                "common": {
+                    "operationalMode": "1",
+                    "udsIPC": true,
+                    "interVMIPC": true,
+                    "rdDaemonAddress": "127.0.0.1",
+                    "rtlDaemonAddress": "127.0.0.1",
+                    "srcMUCEAddress": "127.0.0.1",
+                    "dstMUCEAddress": "127.0.0.1",
+                    "terminationMode": "0",
+                    "vcuMultiVLANSupported": false,
+                    "ipfhTypeCP": "5",
+                    "ipfhTypeUP": "5",
+                    "ttgEnabled": false,
+                    "loopbackInterface": "lo",
+                    "appServerAddress": "127.0.0.1",
+                    "sourceMinPorts": "0",
+                    "sourceMaxPorts": "0",
+                    "dstMinPorts": "0",
+                    "dstMaxPorts": "0",
+                    "prefixLength": "0",
+                    "isIPv6Prefix": "0",
+                    "interfaceType": "0"
+                },
+                "ngcuNode": {
+                    "id": "800",
+                    "managementAddress": "fd02:298c:8dfe:1140::9001:1032",
+                    "numSCTP": "1",
+                    "f1cAddress": "fd02:298c:8dfe:426::12:5056",
+                    "f1cPort": "38472",
+                    "f1cInterface": "eth1"
+                },
+                "nrduNodes": {
+                    "managementAddress": "fd02:298c:8dfe:313:f816:3eff:fef5:2214",
+                    "mappingCount": "0",
+                    "ipsec": {
+                        "ipsecApplicationAddress": "fd02:298c:8dfe:312::9061",
+                        "ipsecEnabledCPSIM": true,
+                        "ipsecEnabledUPSIM": true,
+                        "maxCPClient": "24",
+                        "maxUPClient": "48",
+                        "numIKE": "1",
+                        "ikeDescriptions": [
+                            {
+                                "certificateId": "/O=Altiostar/CN=ca.altiostar.com",
+                                "certificateName": "altiostar-ca-cert.pem",
+                                "ikeType": "pubkey",
+                                "ikeEspProposal": "aes256gcm128",
+                                "ikeProposal": "aes256gcm128-prfsha384-ecp384",
+                                "localTS": "fde4:8dba:82e1::107a",
+                                "remoteTS": "fde4:8dba:82e1:0000:0000:0000:0000:1079"
+                            }
+                        ]
+                    },
+                    "vdu": {
+                        "vduPDCPAddress": "fd02:298c:8dfe:312::9077",
+                        "upPDCPAddress": "fd02:298c:8dfe:312::9067",
+                        "upPDCPInterface": ""
+                    },
+                    "num": "2",
+                    "generate": true,
+                    "template": {
+                        "name": "nrdu%d",
+                        "id": "0",
+                        "maxUE": "700",
+                        "cpsimApplicationAddress": "fd02:298c:8dfe:313:f816:3eff:fef5:2214",
+                        "cpsimApplicationInterface": "",
+                        "upsimApplicationAddress": "fd02:298c:8dfe:312::9063",
+                        "muceApplicationAddress": "fd02:298c:8dfe:313:f816:3eff:feca:8d6c",
+                        "f1cParams": {
+                            "address": "fd02:298c:8dfe:312::9064",
+                            "interface": "eth2"
+                        },
+                        "f1uParams": {
+                            "address": "fd02:298c:8dfe:312::9066",
+                            "interface": "eth2",
+                            "protocolType": "1",
+                            "maxDRB": "4"
+                        },
+                        "serviceCellCount": "2",
+                        "serviceCells": [
+                            {
+                                "cellId": "1",
+                                "pci": "999",
+                                "fivegTAC": "2500",
+                                "epcTAC": "3500",
+                                "modeChoice": "2",
+                                "measurementTimingSize": "10",
+                                "measurementTimingConfig": "ABCDEFGHIJ",
+                                "maxUEPerCell": "256",
+                                "tddInfo": {
+                                    "arfcn": "2081587",
+                                    "band": "257",
+                                    "transmissionBandwidth": {
+                                        "scs": "3",
+                                        "rb": "28"
+                                    }
+                                },
+                                "plmn": {
+                                    "mcc": "001",
+                                    "mnc": "01"
+                                },
+                                "systemInformation": {
+                                    "mibSize": "6",
+                                    "mibInfo": "123456",
+                                    "sibSize": "6",
+                                    "sibInfo": "567890"
+                                },
+                                "cgi": {
+                                    "plmn": {
+                                        "mcc": "001",
+                                        "mnc": "01"
+                                    },
+                                    "cellId": "3276801"
+                                },
+                                "slice": {
+                                    "sst": "1",
+                                    "sd": "D143A5"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "uplinkTTG": {
+                "config": {
+                    "tacAddress": "10.21.104.182",
+                    "appServerAddress": "",
+                    "ttgAddress": "10.21.104.182",
+                    "epcPDNAddress": "10.21.7.160",
+                    "uePerCell": "100",
+                    "connPerUE": "1",
+                    "pdnType": "2",
+                    "groups": [
+                        {
+                            "numTTG": "1",
+                            "mbtaConfig": [
+                                {
+                                    "protocolType": "1",
+                                    "transportType": "4",
+                                    "schedulerType": "1",
+                                    "sourceStartPort": "20000",
+                                    "destinationStartPort": "20000",
+                                    "packetLength": "1200",
+                                    "throughput": "10",
+                                    "terminationPort": "20000"
+                                }
+                            ]
+                        },
+                        {
+                            "numTTG": "0",
+                            "mbtaConfig": [
+                                {
+                                    "protocolType": "2",
+                                    "transportType": "2",
+                                    "schedulerType": "1",
+                                    "sourceStartPort": "20000",
+                                    "destinationStartPort": "20000",
+                                    "packetLength": "1350",
+                                    "throughput": "30",
+                                    "terminationPort": "20000"
+                                }
+                            ]
+                        }
+                    ],
+                    "tcpConfig": {
+                        "tunPrimaryAddress": "10.1.1.2",
+                        "ttgPrimaryAddress": "10.1.1.3",
+                        "maxPollEvents": "30",
+                        "bufferSize": "6000",
+                        "writeMode": "0"
+                    },
+                    "throughputHike": "0",
+                    "overloadedHike": "0",
+                    "isIPV6": "1"
+                }
+            },
+            "downlinkTTG": {
+                "config": {
+                    "tacAddress": "10.21.104.182",
+                    "appServerAddress": "172.80.1.1",
+                    "ttgAddress": "",
+                    "epcPDNAddress": "10.21.7.160",
+                    "uePerCell": "100",
+                    "connPerUE": "1",
+                    "pdnType": "1",
+                    "groups": [
+                        {
+                            "numTTG": "1",
+                            "mbtaConfig": [
+                                {
+                                    "protocolType": "1",
+                                    "transportType": "1",
+                                    "schedulerType": "1",
+                                    "sourceStartPort": "30000",
+                                    "destinationStartPort": "20000",
+                                    "packetLength": "1200",
+                                    "throughput": "20",
+                                    "terminationPort": "20000"
+                                }
+                            ]
+                        },
+                        {
+                            "numTTG": "0",
+                            "mbtaConfig": [
+                                {
+                                    "protocolType": "2",
+                                    "transportType": "2",
+                                    "schedulerType": "1",
+                                    "sourceStartPort": "30000",
+                                    "destinationStartPort": "20000",
+                                    "packetLength": "1300",
+                                    "throughput": "120",
+                                    "terminationPort": "20000"
+                                }
+                            ]
+                        }
+                    ],
+                    "tcpConfig": {
+                        "tunPrimaryAddress": "10.1.1.2",
+                        "ttgPrimaryAddress": "10.1.1.3",
+                        "maxPollEvents": "30",
+                        "bufferSize": "6000",
+                        "writeMode": "0"
+                    },
+                    "throughputHike": "0",
+                    "overloadedHike": "0",
+                    "isIPV6": "1"
+                }
+            },
+            "scenarioSetup": {
+                "numScenarios": "1",
+                "scenarioNode": {
+                    "fieldScenarios": [
+                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<lte>\n    <scenarios>\n\t<num_of_scen>1</num_of_scen>\n\n\t<!-- Scenario_0 -->\n\t<scen>\n\n\t   <!-- Thread is sequence of procedures and commands, that could be executed number of times, thread could consist anothers threads -->\n\n\t   <!-- Procedures types: ATTACH=0, DETACH=1, ADB=2, DADB=3, PDN_CONN=4, PDN_DISCONN=5, MDB=6-->\n\n\t    <thread>\n\t\t<num_of_iter>1</num_of_iter>\n\n\t\t<!-- ATTACH cid=0, bid=0-->\n\t\t<proc>\n\t\t    <type>0</type>\n\t\t</proc>\n\n\t\t<cmd>\n\t\t    <!-- Delay in msec -->\n\t\t    <delay>10000</delay>\n\t\t</cmd>\n\n        <!-- Trigger Measurement Report -->\n        <proc>\n            <type>9</type>\n            <params>\n                <!-- rsrp -->\n                <rsrp>30</rsrp>\n                <!-- rsrq -->\n                <rsrq>30</rsrq>\n                <!-- pci -->\n                <pci>901</pci>\n            </params>\n        </proc>\n\n        <cmd>\n            <!-- Delay in msec -->\n            <delay>10000</delay>\n        </cmd>\n\n\n        <!-- start traffic -->\n        <proc>\n            <type>7</type>\n            <!-- Obligatory PDN_CONN params -->\n            <params>\n            <!-- start traffic param mbtaid=0 default pdn defaul bearer -->\n            <!-- start traffic direction =3 ul and dl -->\n                 <mbtaid>0</mbtaid>\n                 <direction>3</direction>\n            </params>\n        </proc>\n\n         <cmd>\n         <!-- Delay in msec 1Day-->\n            <delay>180000</delay>\n         </cmd>\n\n          <proc>\n             <type>8</type>\n             <!-- Obligatory PDN_CONN params -->\n             <params>\n             <!-- start traffic param mbtaid=0 default pdn defaul bearer -->\n             <!-- start traffic direction =3 ul and dl -->\n                 <mbtaid>0</mbtaid>\n                 <direction>3</direction>\n             </params>\n         </proc>\n\n         <cmd>\n         <!-- Delay in msec -->\n            <delay>5000</delay>\n         </cmd>\n\n         <proc>\n             <!-- type 10 is for SCG Deletion(SCG_FAILURE) -->\n             <type>10</type>\n         </proc>\n\n         <cmd>\n         <!-- Delay in msec -->\n            <delay>5000</delay>\n         </cmd>\n\n         <!-- start traffic -->\n         <proc>\n             <type>7</type>\n             <!-- Obligatory PDN_CONN params -->\n             <params>\n             <!-- start traffic param mbtaid=0 default pdn defaul bearer -->\n             <!-- start traffic direction =3 ul and dl -->\n             <mbtaid>0</mbtaid>\n             <direction>3</direction>\n             </params>\n         </proc>\n\n         <cmd>\n             <!-- Delay in msec 1Day-->\n             <delay>180000</delay>\n         </cmd>\n\n         <proc>\n             <type>8</type>\n             <!-- Obligatory PDN_CONN params -->\n             <params>\n             <!-- start traffic param mbtaid=0 default pdn defaul bearer -->\n             <!-- start traffic direction =3 ul and dl -->\n             <mbtaid>0</mbtaid>\n             <direction>3</direction>\n             </params>\n         </proc>\n\n         <cmd>\n             <!-- Delay in msec 1Day-->\n             <delay>5000</delay>\n         </cmd>\n\n         <!-- DETACH cid=0, bid=0-->\n         <proc>\n             <type>1</type>\n         </proc>\n\n         <cmd>\n             <!-- Delay in msec -->\n             <delay>5000</delay>\n         </cmd>\n\n         </thread>\n       </scen>\n\n    </scenarios>\n\n</lte>\n"
+                    ],
+                    "scenario": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<lte>\n    <scenarios>\n\t<num_of_scen>1</num_of_scen>\n\t\n\t<!-- Scenario_0 -->\t\n\t<scen>\n\t   \n\t   <!-- Thread is sequence of procedures and commands, that could be executed number of times, thread could consist anothers threads -->\n\t   \n\t   <!-- Procedures types: ATTACH=0, DETACH=1, ADB=2, DADB=3, PDN_CONN=4, PDN_DISCONN=5, MDB=6-->\n\n\t    <thread>\n\t\t<num_of_iter>1</num_of_iter>\n\t\t\n\t\t<!-- ATTACH cid=0, bid=0-->\n\t\t<proc>\n\t\t    <type>0</type>\t\t\n\t\t</proc>\n\t\t\n\t\t<cmd>\n\t\t    <!-- Delay in msec -->\n\t\t    <delay>5000</delay>\t\t\n\t\t</cmd>\n\n                <!-- start traffic -->\n       <proc>\n            <type>7</type>\n            <!-- Obligatory PDN_CONN params -->\n            <params>\n            <!-- start traffic param mbtaid=0 default pdn defaul bearer -->\n            <!-- start traffic direction =3 ul and dl -->\n                 <mbtaid>0</mbtaid>                                                                                                                            \n                 <direction>3</direction>\n            </params>\n        </proc>\n\n         <cmd>\n         <!-- Delay in msec 1Day-->\n            <delay>3000000</delay>\n            <!--delay>15000</delay-->\n         </cmd>\n\n          <proc>\n             <type>8</type>\n             <!-- Obligatory PDN_CONN params -->\n             <params>\n             <!-- start traffic param mbtaid=0 default pdn defaul bearer -->\n             <!-- start traffic direction =3 ul and dl -->\n                 <mbtaid>0</mbtaid>\n                 <direction>3</direction>\n             </params>\n         </proc>\n\n         <cmd>\n         <!-- Delay in msec -->\n            <delay>5000</delay>\n         </cmd>\n\n\t\t<!-- DETACH cid=0, bid=0-->\n\t\t<proc>\n\t\t    <type>1</type>\t\t\n\t\t</proc>\n\t\t\n\t\t<cmd>\n\t\t    <!-- Delay in msec -->\n\t\t    <delay>5000</delay>\t\t\n\t\t</cmd>\n\n\t\t\n\t    </thread>\n\t</scen>\n\n\n    </scenarios>\n\n</lte>\n"
+                }
+            }
+        }
+    ]
+}

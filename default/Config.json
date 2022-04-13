@@ -1,0 +1,1755 @@
+{
+    "type": "object",
+    "properties": {
+      "numSetup": {
+        "type": "string"
+      },
+      "technology": {
+        "type": "string"
+      },
+      "setups": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "lteSetup": {
+                "type": "object",
+                "properties": {
+                  "common": {
+                    "type": "object",
+                    "properties": {
+                      "deploymentMode": {
+                        "type": "string",
+                        "default": "field"
+                      },
+                      "sgwAddress": {
+                        "type": "string",
+                        "default": "fd02:298c:8dfe:3006::1c"
+                      },
+                      "appServerAddress": {
+                        "type": "string"
+                      },
+                      "appServerGateway": {
+                        "type": "string"
+                      },
+                      "epcPDNAddress": {
+                        "type": "string"
+                      },
+                      "vbbuAddress": {
+                        "type": "string"
+                      },
+                      "muceAddress": {
+                        "type": "string"
+                      },
+                      "mobileCountryCode": {
+                        "type": "string"
+                      },
+                      "mobileNetworkCode": {
+                        "type": "string"
+                      },
+                      "ueIdDigits": {
+                        "type": "string"
+                      },
+                      "mobileStationIdentityNumber": {
+                        "type": "string"
+                      },
+                      "milenageAlgorithm": {
+                        "type": "boolean"
+                      },
+                      "zeroNasIntegriy": {
+                        "type": "boolean"
+                      },
+                      "masterKey": {
+                        "type": "string"
+                      },
+                      "operatorVariant": {
+                        "type": "string"
+                      },
+                      "authenticationManagementField": {
+                        "type": "string"
+                      },
+                      "homeMobileCountryCode": {
+                        "type": "string"
+                      },
+                      "homeMobileNetworkCode": {
+                        "type": "string"
+                      },
+                      "accessPointName": {
+                        "type": "string"
+                      },
+                      "sourceMinPorts": {
+                        "type": "string"
+                      },
+                      "sourceMaxPorts": {
+                        "type": "string"
+                      },
+                      "dstMinPorts": {
+                        "type": "string"
+                      },
+                      "dstMaxPorts": {
+                        "type": "string"
+                      },
+                      "prefixLength": {
+                        "type": "string"
+                      },
+                      "isIPv6Prefix": {
+                        "type": "string"
+                      },
+                      "interfaceType": {
+                        "type": "string"
+                      },
+                      "bandEutra": {
+                        "type": "string"
+                      },
+                      "dlErafcn": {
+                        "type": "string"
+                      },
+                      "physicalCellId": {
+                        "type": "string"
+                      },
+                      "pdcpDataOptimization": {
+                        "type": "boolean"
+                      },
+                      "retryFailedSectors": {
+                        "type": "boolean"
+                      },
+                      "ttgEnabled": {
+                        "type": "boolean"
+                      },
+                      "vcuRestartEnabled": {
+                        "type": "boolean"
+                      },
+                      "oamCallSupport": {
+                        "type": "boolean"
+                      },
+                      "caSupported": {
+                        "type": "boolean"
+                      },
+                      "irrhDeviceType": {
+                        "type": "string"
+                      },
+                      "ueIPNetwork": {
+                        "type": "string"
+                      },
+                      "ueIPPrefixLength": {
+                        "type": "string"
+                      },
+                      "preferredPDNType": {
+                        "type": "string"
+                      },
+                      "calculateUDPChecksum": {
+                        "type": "boolean"
+                      },
+                      "uePDNMask": {
+                        "type": "string"
+                      },
+                      "epcPDNInterface": {
+                        "type": "string"
+                      },
+                      "toolPDNNetwork": {
+                        "type": "string"
+                      },
+                      "ipfhType": {
+                        "type": "string"
+                      },
+                      "vcuType": {
+                        "type": "string"
+                      },
+                      "macroOrCollocated": {
+                        "type": "boolean"
+                      },
+                      "gtpTunnelMode": {
+                        "type": "string"
+                      },
+                      "gtpUplinkForwarding": {
+                        "type": "string"
+                      },
+                      "executionTime": {
+                        "type": "string"
+                      },
+                      "pingUEFromTTG": {
+                        "type": "boolean"
+                      },
+                      "vcuMultiVLANSupported": {
+                        "type": "boolean"
+                      },
+                      "terminationMode": {
+                        "type": "string"
+                      },
+                      "mucePDNAddress": {
+                        "type": "string"
+                      },
+                      "vcuPlatformType": {
+                        "type": "string"
+                      },
+                      "bandNR": {
+                        "type": "string"
+                      },
+                      "randomSplitRatio": {
+                        "type": "string"
+                      },
+                      "splitRatio": {
+                        "type": "string"
+                      },
+                      "hikeSplitRatio": {
+                        "type": "string"
+                      },
+                      "numSectorSplitRatio": {
+                        "type": "string"
+                      },
+                      "endcUEThreshold": {
+                        "type": "string"
+                      },
+                      "bbuType": {
+                        "type": "string"
+                      },
+                      "cpsimInterface": {
+                        "type": "object",
+                        "properties": {
+                          "isIPV6": {
+                            "type": "boolean"
+                          },
+                          "cpsimAddress": {
+                            "type": "string"
+                          },
+                          "cpsimStartPort": {
+                            "type": "string"
+                          },
+                          "muceAddress": {
+                            "type": "string"
+                          },
+                          "muceStartPort": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "isIPV6",
+                          "cpsimAddress",
+                          "cpsimStartPort",
+                          "muceAddress",
+                          "muceStartPort"
+                        ]
+                      },
+                      "upsimInterface": {
+                        "type": "object",
+                        "properties": {
+                          "isIPV6": {
+                            "type": "boolean"
+                          },
+                          "upPDCPAddress": {
+                            "type": "string"
+                          },
+                          "upsimVDUStartPort": {
+                            "type": "string"
+                          },
+                          "vduPDCPAddress": {
+                            "type": "string"
+                          },
+                          "vduUPSimStartPort": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "isIPV6",
+                          "upPDCPAddress",
+                          "upsimVDUStartPort",
+                          "vduPDCPAddress",
+                          "vduUPSimStartPort"
+                        ]
+                      },
+                      "operationMode": {
+                        "type": "string"
+                      },
+                      "scriptServerAddress": {
+                        "type": "string",
+                        "format": "ipv4"
+                      },
+                      "ueidGlobalStart": {
+                        "type": "string"
+                      },
+                      "numberSectors": {
+                        "type": "string"
+                      },
+                      "procTimeout": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "deploymentMode",
+                      "sgwAddress",
+                      "appServerAddress",
+                      "appServerGateway",
+                      "epcPDNAddress",
+                      "vbbuAddress",
+                      "muceAddress",
+                      "mobileCountryCode",
+                      "mobileNetworkCode",
+                      "ueIdDigits",
+                      "mobileStationIdentityNumber",
+                      "milenageAlgorithm",
+                      "zeroNasIntegriy",
+                      "masterKey",
+                      "operatorVariant",
+                      "authenticationManagementField",
+                      "homeMobileCountryCode",
+                      "homeMobileNetworkCode",
+                      "accessPointName",
+                      "sourceMinPorts",
+                      "sourceMaxPorts",
+                      "dstMinPorts",
+                      "dstMaxPorts",
+                      "prefixLength",
+                      "isIPv6Prefix",
+                      "interfaceType",
+                      "bandEutra",
+                      "dlErafcn",
+                      "physicalCellId",
+                      "pdcpDataOptimization",
+                      "retryFailedSectors",
+                      "ttgEnabled",
+                      "vcuRestartEnabled",
+                      "oamCallSupport",
+                      "caSupported",
+                      "irrhDeviceType",
+                      "ueIPNetwork",
+                      "ueIPPrefixLength",
+                      "preferredPDNType",
+                      "calculateUDPChecksum",
+                      "uePDNMask",
+                      "epcPDNInterface",
+                      "toolPDNNetwork",
+                      "ipfhType",
+                      "vcuType",
+                      "macroOrCollocated",
+                      "gtpTunnelMode",
+                      "gtpUplinkForwarding",
+                      "executionTime",
+                      "pingUEFromTTG",
+                      "vcuMultiVLANSupported",
+                      "terminationMode",
+                      "mucePDNAddress",
+                      "vcuPlatformType",
+                      "bandNR",
+                      "randomSplitRatio",
+                      "splitRatio",
+                      "hikeSplitRatio",
+                      "numSectorSplitRatio",
+                      "endcUEThreshold",
+                      "bbuType",
+                      "cpsimInterface",
+                      "upsimInterface",
+                      "operationMode",
+                      "scriptServerAddress",
+                      "ueidGlobalStart",
+                      "numberSectors",
+                      "procTimeout"
+                    ]
+                  },
+                  "nodes": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "vcuManagementAddress": {
+                            "type": "string"
+                          },
+                          "vcuEPCInterface": {
+                            "type": "string"
+                          },
+                          "vcuInterface": {
+                            "type": "string"
+                          },
+                          "vduTACManagementAddress": {
+                            "type": "string"
+                          },
+                          "vduRRHInterface": {
+                            "type": "string"
+                          },
+                          "vduRRHAddress": {
+                            "type": "string"
+                          },
+                          "vduMUCEInterface": {
+                            "type": "string"
+                          },
+                          "vduUEPerCell": {
+                            "type": "string"
+                          },
+                          "vduNumRealRRH": {
+                            "type": "string"
+                          },
+                          "clusterManagementAddress": {
+                            "type": "string"
+                          },
+                          "tacTTGAddress": {
+                            "type": "string"
+                          },
+                          "fieldTTGNodeUL": {
+                            "type": "object",
+                            "properties": {
+                              "config": {
+                                "type": "object",
+                                "properties": {
+                                  "tacAddress": {
+                                    "type": "string"
+                                  },
+                                  "appServerAddress": {
+                                    "type": "string"
+                                  },
+                                  "ttgAddress": {
+                                    "type": "string"
+                                  },
+                                  "epcPDNAddress": {
+                                    "type": "string"
+                                  },
+                                  "uePerCell": {
+                                    "type": "string"
+                                  },
+                                  "connPerUE": {
+                                    "type": "string"
+                                  },
+                                  "pdnType": {
+                                    "type": "string"
+                                  },
+                                  "groups": {
+                                    "type": "array",
+                                    "items": [
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "numTTG": {
+                                            "type": "string"
+                                          },
+                                          "mbtaConfig": {
+                                            "type": "array",
+                                            "items": [
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "protocolType": {
+                                                    "type": "string"
+                                                  },
+                                                  "transportType": {
+                                                    "type": "string"
+                                                  },
+                                                  "schedulerType": {
+                                                    "type": "string"
+                                                  },
+                                                  "sourceStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "destinationStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "packetLength": {
+                                                    "type": "string"
+                                                  },
+                                                  "throughput": {
+                                                    "type": "string"
+                                                  },
+                                                  "terminationPort": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "protocolType",
+                                                  "transportType",
+                                                  "schedulerType",
+                                                  "sourceStartPort",
+                                                  "destinationStartPort",
+                                                  "packetLength",
+                                                  "throughput",
+                                                  "terminationPort"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "numTTG",
+                                          "mbtaConfig"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "numTTG": {
+                                            "type": "string"
+                                          },
+                                          "mbtaConfig": {
+                                            "type": "array",
+                                            "items": [
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "protocolType": {
+                                                    "type": "string"
+                                                  },
+                                                  "transportType": {
+                                                    "type": "string"
+                                                  },
+                                                  "schedulerType": {
+                                                    "type": "string"
+                                                  },
+                                                  "sourceStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "destinationStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "packetLength": {
+                                                    "type": "string"
+                                                  },
+                                                  "throughput": {
+                                                    "type": "string"
+                                                  },
+                                                  "terminationPort": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "protocolType",
+                                                  "transportType",
+                                                  "schedulerType",
+                                                  "sourceStartPort",
+                                                  "destinationStartPort",
+                                                  "packetLength",
+                                                  "throughput",
+                                                  "terminationPort"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "numTTG",
+                                          "mbtaConfig"
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  "tcpConfig": {
+                                    "type": "object",
+                                    "properties": {
+                                      "tunPrimaryAddress": {
+                                        "type": "string"
+                                      },
+                                      "ttgPrimaryAddress": {
+                                        "type": "string"
+                                      },
+                                      "maxPollEvents": {
+                                        "type": "string"
+                                      },
+                                      "bufferSize": {
+                                        "type": "string"
+                                      },
+                                      "writeMode": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "tunPrimaryAddress",
+                                      "ttgPrimaryAddress",
+                                      "maxPollEvents",
+                                      "bufferSize",
+                                      "writeMode"
+                                    ]
+                                  },
+                                  "throughputHike": {
+                                    "type": "string"
+                                  },
+                                  "overloadedHike": {
+                                    "type": "string"
+                                  },
+                                  "isIPV6": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "tacAddress",
+                                  "appServerAddress",
+                                  "ttgAddress",
+                                  "epcPDNAddress",
+                                  "uePerCell",
+                                  "connPerUE",
+                                  "pdnType",
+                                  "groups",
+                                  "tcpConfig",
+                                  "throughputHike",
+                                  "overloadedHike",
+                                  "isIPV6"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "config"
+                            ]
+                          },
+                          "fieldTTGNodeDL": {
+                            "type": "object",
+                            "properties": {
+                              "config": {
+                                "type": "object",
+                                "properties": {
+                                  "tacAddress": {
+                                    "type": "string"
+                                  },
+                                  "appServerAddress": {
+                                    "type": "string"
+                                  },
+                                  "ttgAddress": {
+                                    "type": "string"
+                                  },
+                                  "epcPDNAddress": {
+                                    "type": "string"
+                                  },
+                                  "uePerCell": {
+                                    "type": "string"
+                                  },
+                                  "connPerUE": {
+                                    "type": "string"
+                                  },
+                                  "pdnType": {
+                                    "type": "string"
+                                  },
+                                  "groups": {
+                                    "type": "array",
+                                    "items": [
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "numTTG": {
+                                            "type": "string"
+                                          },
+                                          "mbtaConfig": {
+                                            "type": "array",
+                                            "items": [
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "protocolType": {
+                                                    "type": "string"
+                                                  },
+                                                  "transportType": {
+                                                    "type": "string"
+                                                  },
+                                                  "schedulerType": {
+                                                    "type": "string"
+                                                  },
+                                                  "sourceStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "destinationStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "packetLength": {
+                                                    "type": "string"
+                                                  },
+                                                  "throughput": {
+                                                    "type": "string"
+                                                  },
+                                                  "terminationPort": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "protocolType",
+                                                  "transportType",
+                                                  "schedulerType",
+                                                  "sourceStartPort",
+                                                  "destinationStartPort",
+                                                  "packetLength",
+                                                  "throughput",
+                                                  "terminationPort"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "numTTG",
+                                          "mbtaConfig"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "numTTG": {
+                                            "type": "string"
+                                          },
+                                          "mbtaConfig": {
+                                            "type": "array",
+                                            "items": [
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "protocolType": {
+                                                    "type": "string"
+                                                  },
+                                                  "transportType": {
+                                                    "type": "string"
+                                                  },
+                                                  "schedulerType": {
+                                                    "type": "string"
+                                                  },
+                                                  "sourceStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "destinationStartPort": {
+                                                    "type": "string"
+                                                  },
+                                                  "packetLength": {
+                                                    "type": "string"
+                                                  },
+                                                  "throughput": {
+                                                    "type": "string"
+                                                  },
+                                                  "terminationPort": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "protocolType",
+                                                  "transportType",
+                                                  "schedulerType",
+                                                  "sourceStartPort",
+                                                  "destinationStartPort",
+                                                  "packetLength",
+                                                  "throughput",
+                                                  "terminationPort"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "numTTG",
+                                          "mbtaConfig"
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  "tcpConfig": {
+                                    "type": "object",
+                                    "properties": {
+                                      "tunPrimaryAddress": {
+                                        "type": "string"
+                                      },
+                                      "ttgPrimaryAddress": {
+                                        "type": "string"
+                                      },
+                                      "maxPollEvents": {
+                                        "type": "string"
+                                      },
+                                      "bufferSize": {
+                                        "type": "string"
+                                      },
+                                      "writeMode": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "tunPrimaryAddress",
+                                      "ttgPrimaryAddress",
+                                      "maxPollEvents",
+                                      "bufferSize",
+                                      "writeMode"
+                                    ]
+                                  },
+                                  "throughputHike": {
+                                    "type": "string"
+                                  },
+                                  "overloadedHike": {
+                                    "type": "string"
+                                  },
+                                  "isIPV6": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "tacAddress",
+                                  "appServerAddress",
+                                  "ttgAddress",
+                                  "epcPDNAddress",
+                                  "uePerCell",
+                                  "connPerUE",
+                                  "pdnType",
+                                  "groups",
+                                  "tcpConfig",
+                                  "throughputHike",
+                                  "overloadedHike",
+                                  "isIPV6"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "config"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "vcuManagementAddress",
+                          "vcuEPCInterface",
+                          "vcuInterface",
+                          "vduTACManagementAddress",
+                          "vduRRHInterface",
+                          "vduRRHAddress",
+                          "vduMUCEInterface",
+                          "vduUEPerCell",
+                          "vduNumRealRRH",
+                          "clusterManagementAddress",
+                          "tacTTGAddress",
+                          "fieldTTGNodeUL",
+                          "fieldTTGNodeDL"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "common",
+                  "nodes"
+                ]
+              },
+              "endcSetup": {
+                "type": "object",
+                "properties": {
+                  "common": {
+                    "type": "object",
+                    "properties": {
+                      "operationalMode": {
+                        "type": "string"
+                      },
+                      "udsIPC": {
+                        "type": "boolean"
+                      },
+                      "interVMIPC": {
+                        "type": "boolean"
+                      },
+                      "rdDaemonAddress": {
+                        "type": "string"
+                      },
+                      "rtlDaemonAddress": {
+                        "type": "string"
+                      },
+                      "srcMUCEAddress": {
+                        "type": "string"
+                      },
+                      "dstMUCEAddress": {
+                        "type": "string"
+                      },
+                      "terminationMode": {
+                        "type": "string"
+                      },
+                      "vcuMultiVLANSupported": {
+                        "type": "boolean"
+                      },
+                      "ipfhTypeCP": {
+                        "type": "string"
+                      },
+                      "ipfhTypeUP": {
+                        "type": "string"
+                      },
+                      "ttgEnabled": {
+                        "type": "boolean"
+                      },
+                      "loopbackInterface": {
+                        "type": "string"
+                      },
+                      "appServerAddress": {
+                        "type": "string"
+                      },
+                      "sourceMinPorts": {
+                        "type": "string"
+                      },
+                      "sourceMaxPorts": {
+                        "type": "string"
+                      },
+                      "dstMinPorts": {
+                        "type": "string"
+                      },
+                      "dstMaxPorts": {
+                        "type": "string"
+                      },
+                      "prefixLength": {
+                        "type": "string"
+                      },
+                      "isIPv6Prefix": {
+                        "type": "string"
+                      },
+                      "interfaceType": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "operationalMode",
+                      "udsIPC",
+                      "interVMIPC",
+                      "rdDaemonAddress",
+                      "rtlDaemonAddress",
+                      "srcMUCEAddress",
+                      "dstMUCEAddress",
+                      "terminationMode",
+                      "vcuMultiVLANSupported",
+                      "ipfhTypeCP",
+                      "ipfhTypeUP",
+                      "ttgEnabled",
+                      "loopbackInterface",
+                      "appServerAddress",
+                      "sourceMinPorts",
+                      "sourceMaxPorts",
+                      "dstMinPorts",
+                      "dstMaxPorts",
+                      "prefixLength",
+                      "isIPv6Prefix",
+                      "interfaceType"
+                    ]
+                  },
+                  "ngcuNode": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "managementAddress": {
+                        "type": "string"
+                      },
+                      "numSCTP": {
+                        "type": "string"
+                      },
+                      "f1cAddress": {
+                        "type": "string"
+                      },
+                      "f1cPort": {
+                        "type": "string"
+                      },
+                      "f1cInterface": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "managementAddress",
+                      "numSCTP",
+                      "f1cAddress",
+                      "f1cPort",
+                      "f1cInterface"
+                    ]
+                  },
+                  "nrduNodes": {
+                    "type": "object",
+                    "properties": {
+                      "managementAddress": {
+                        "type": "string"
+                      },
+                      "mappingCount": {
+                        "type": "string"
+                      },
+                      "ipsec": {
+                        "type": "object",
+                        "properties": {
+                          "ipsecApplicationAddress": {
+                            "type": "string"
+                          },
+                          "ipsecEnabledCPSIM": {
+                            "type": "boolean"
+                          },
+                          "ipsecEnabledUPSIM": {
+                            "type": "boolean"
+                          },
+                          "maxCPClient": {
+                            "type": "string"
+                          },
+                          "maxUPClient": {
+                            "type": "string"
+                          },
+                          "numIKE": {
+                            "type": "string"
+                          },
+                          "ikeDescriptions": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "certificateId": {
+                                    "type": "string"
+                                  },
+                                  "certificateName": {
+                                    "type": "string"
+                                  },
+                                  "ikeType": {
+                                    "type": "string"
+                                  },
+                                  "ikeEspProposal": {
+                                    "type": "string"
+                                  },
+                                  "ikeProposal": {
+                                    "type": "string"
+                                  },
+                                  "localTS": {
+                                    "type": "string"
+                                  },
+                                  "remoteTS": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "certificateId",
+                                  "certificateName",
+                                  "ikeType",
+                                  "ikeEspProposal",
+                                  "ikeProposal",
+                                  "localTS",
+                                  "remoteTS"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "ipsecApplicationAddress",
+                          "ipsecEnabledCPSIM",
+                          "ipsecEnabledUPSIM",
+                          "maxCPClient",
+                          "maxUPClient",
+                          "numIKE",
+                          "ikeDescriptions"
+                        ]
+                      },
+                      "vdu": {
+                        "type": "object",
+                        "properties": {
+                          "vduPDCPAddress": {
+                            "type": "string"
+                          },
+                          "upPDCPAddress": {
+                            "type": "string"
+                          },
+                          "upPDCPInterface": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "vduPDCPAddress",
+                          "upPDCPAddress",
+                          "upPDCPInterface"
+                        ]
+                      },
+                      "num": {
+                        "type": "string"
+                      },
+                      "generate": {
+                        "type": "boolean"
+                      },
+                      "template": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "maxUE": {
+                            "type": "string"
+                          },
+                          "cpsimApplicationAddress": {
+                            "type": "string"
+                          },
+                          "cpsimApplicationInterface": {
+                            "type": "string"
+                          },
+                          "upsimApplicationAddress": {
+                            "type": "string"
+                          },
+                          "muceApplicationAddress": {
+                            "type": "string"
+                          },
+                          "f1cParams": {
+                            "type": "object",
+                            "properties": {
+                              "address": {
+                                "type": "string"
+                              },
+                              "interface": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "address",
+                              "interface"
+                            ]
+                          },
+                          "f1uParams": {
+                            "type": "object",
+                            "properties": {
+                              "address": {
+                                "type": "string"
+                              },
+                              "interface": {
+                                "type": "string"
+                              },
+                              "protocolType": {
+                                "type": "string"
+                              },
+                              "maxDRB": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "address",
+                              "interface",
+                              "protocolType",
+                              "maxDRB"
+                            ]
+                          },
+                          "serviceCellCount": {
+                            "type": "string"
+                          },
+                          "serviceCells": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "cellId": {
+                                    "type": "string"
+                                  },
+                                  "pci": {
+                                    "type": "string"
+                                  },
+                                  "fivegTAC": {
+                                    "type": "string"
+                                  },
+                                  "epcTAC": {
+                                    "type": "string"
+                                  },
+                                  "modeChoice": {
+                                    "type": "string"
+                                  },
+                                  "measurementTimingSize": {
+                                    "type": "string"
+                                  },
+                                  "measurementTimingConfig": {
+                                    "type": "string"
+                                  },
+                                  "maxUEPerCell": {
+                                    "type": "string"
+                                  },
+                                  "tddInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                      "arfcn": {
+                                        "type": "string"
+                                      },
+                                      "band": {
+                                        "type": "string"
+                                      },
+                                      "transmissionBandwidth": {
+                                        "type": "object",
+                                        "properties": {
+                                          "scs": {
+                                            "type": "string"
+                                          },
+                                          "rb": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "scs",
+                                          "rb"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "arfcn",
+                                      "band",
+                                      "transmissionBandwidth"
+                                    ]
+                                  },
+                                  "plmn": {
+                                    "type": "object",
+                                    "properties": {
+                                      "mcc": {
+                                        "type": "string"
+                                      },
+                                      "mnc": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "mcc",
+                                      "mnc"
+                                    ]
+                                  },
+                                  "systemInformation": {
+                                    "type": "object",
+                                    "properties": {
+                                      "mibSize": {
+                                        "type": "string"
+                                      },
+                                      "mibInfo": {
+                                        "type": "string"
+                                      },
+                                      "sibSize": {
+                                        "type": "string"
+                                      },
+                                      "sibInfo": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "mibSize",
+                                      "mibInfo",
+                                      "sibSize",
+                                      "sibInfo"
+                                    ]
+                                  },
+                                  "cgi": {
+                                    "type": "object",
+                                    "properties": {
+                                      "plmn": {
+                                        "type": "object",
+                                        "properties": {
+                                          "mcc": {
+                                            "type": "string"
+                                          },
+                                          "mnc": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "mcc",
+                                          "mnc"
+                                        ]
+                                      },
+                                      "cellId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "plmn",
+                                      "cellId"
+                                    ]
+                                  },
+                                  "slice": {
+                                    "type": "object",
+                                    "properties": {
+                                      "sst": {
+                                        "type": "string"
+                                      },
+                                      "sd": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "sst",
+                                      "sd"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "cellId",
+                                  "pci",
+                                  "fivegTAC",
+                                  "epcTAC",
+                                  "modeChoice",
+                                  "measurementTimingSize",
+                                  "measurementTimingConfig",
+                                  "maxUEPerCell",
+                                  "tddInfo",
+                                  "plmn",
+                                  "systemInformation",
+                                  "cgi",
+                                  "slice"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "id",
+                          "maxUE",
+                          "cpsimApplicationAddress",
+                          "cpsimApplicationInterface",
+                          "upsimApplicationAddress",
+                          "muceApplicationAddress",
+                          "f1cParams",
+                          "f1uParams",
+                          "serviceCellCount",
+                          "serviceCells"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "managementAddress",
+                      "mappingCount",
+                      "ipsec",
+                      "vdu",
+                      "num",
+                      "generate",
+                      "template"
+                    ]
+                  }
+                },
+                "required": [
+                  "common",
+                  "ngcuNode",
+                  "nrduNodes"
+                ]
+              },
+              "uplinkTTG": {
+                "type": "object",
+                "properties": {
+                  "config": {
+                    "type": "object",
+                    "properties": {
+                      "tacAddress": {
+                        "type": "string"
+                      },
+                      "appServerAddress": {
+                        "type": "string"
+                      },
+                      "ttgAddress": {
+                        "type": "string"
+                      },
+                      "epcPDNAddress": {
+                        "type": "string"
+                      },
+                      "uePerCell": {
+                        "type": "string"
+                      },
+                      "connPerUE": {
+                        "type": "string"
+                      },
+                      "pdnType": {
+                        "type": "string"
+                      },
+                      "groups": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "numTTG": {
+                                "type": "string"
+                              },
+                              "mbtaConfig": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "protocolType": {
+                                        "type": "string"
+                                      },
+                                      "transportType": {
+                                        "type": "string"
+                                      },
+                                      "schedulerType": {
+                                        "type": "string"
+                                      },
+                                      "sourceStartPort": {
+                                        "type": "string"
+                                      },
+                                      "destinationStartPort": {
+                                        "type": "string"
+                                      },
+                                      "packetLength": {
+                                        "type": "string"
+                                      },
+                                      "throughput": {
+                                        "type": "string"
+                                      },
+                                      "terminationPort": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "protocolType",
+                                      "transportType",
+                                      "schedulerType",
+                                      "sourceStartPort",
+                                      "destinationStartPort",
+                                      "packetLength",
+                                      "throughput",
+                                      "terminationPort"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "numTTG",
+                              "mbtaConfig"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "numTTG": {
+                                "type": "string"
+                              },
+                              "mbtaConfig": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "protocolType": {
+                                        "type": "string"
+                                      },
+                                      "transportType": {
+                                        "type": "string"
+                                      },
+                                      "schedulerType": {
+                                        "type": "string"
+                                      },
+                                      "sourceStartPort": {
+                                        "type": "string"
+                                      },
+                                      "destinationStartPort": {
+                                        "type": "string"
+                                      },
+                                      "packetLength": {
+                                        "type": "string"
+                                      },
+                                      "throughput": {
+                                        "type": "string"
+                                      },
+                                      "terminationPort": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "protocolType",
+                                      "transportType",
+                                      "schedulerType",
+                                      "sourceStartPort",
+                                      "destinationStartPort",
+                                      "packetLength",
+                                      "throughput",
+                                      "terminationPort"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "numTTG",
+                              "mbtaConfig"
+                            ]
+                          }
+                        ]
+                      },
+                      "tcpConfig": {
+                        "type": "object",
+                        "properties": {
+                          "tunPrimaryAddress": {
+                            "type": "string"
+                          },
+                          "ttgPrimaryAddress": {
+                            "type": "string"
+                          },
+                          "maxPollEvents": {
+                            "type": "string"
+                          },
+                          "bufferSize": {
+                            "type": "string"
+                          },
+                          "writeMode": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "tunPrimaryAddress",
+                          "ttgPrimaryAddress",
+                          "maxPollEvents",
+                          "bufferSize",
+                          "writeMode"
+                        ]
+                      },
+                      "throughputHike": {
+                        "type": "string"
+                      },
+                      "overloadedHike": {
+                        "type": "string"
+                      },
+                      "isIPV6": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "tacAddress",
+                      "appServerAddress",
+                      "ttgAddress",
+                      "epcPDNAddress",
+                      "uePerCell",
+                      "connPerUE",
+                      "pdnType",
+                      "groups",
+                      "tcpConfig",
+                      "throughputHike",
+                      "overloadedHike",
+                      "isIPV6"
+                    ]
+                  }
+                },
+                "required": [
+                  "config"
+                ]
+              },
+              "downlinkTTG": {
+                "type": "object",
+                "properties": {
+                  "config": {
+                    "type": "object",
+                    "properties": {
+                      "tacAddress": {
+                        "type": "string"
+                      },
+                      "appServerAddress": {
+                        "type": "string"
+                      },
+                      "ttgAddress": {
+                        "type": "string"
+                      },
+                      "epcPDNAddress": {
+                        "type": "string"
+                      },
+                      "uePerCell": {
+                        "type": "string"
+                      },
+                      "connPerUE": {
+                        "type": "string"
+                      },
+                      "pdnType": {
+                        "type": "string"
+                      },
+                      "groups": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "numTTG": {
+                                "type": "string"
+                              },
+                              "mbtaConfig": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "protocolType": {
+                                        "type": "string"
+                                      },
+                                      "transportType": {
+                                        "type": "string"
+                                      },
+                                      "schedulerType": {
+                                        "type": "string"
+                                      },
+                                      "sourceStartPort": {
+                                        "type": "string"
+                                      },
+                                      "destinationStartPort": {
+                                        "type": "string"
+                                      },
+                                      "packetLength": {
+                                        "type": "string"
+                                      },
+                                      "throughput": {
+                                        "type": "string"
+                                      },
+                                      "terminationPort": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "protocolType",
+                                      "transportType",
+                                      "schedulerType",
+                                      "sourceStartPort",
+                                      "destinationStartPort",
+                                      "packetLength",
+                                      "throughput",
+                                      "terminationPort"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "numTTG",
+                              "mbtaConfig"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "numTTG": {
+                                "type": "string"
+                              },
+                              "mbtaConfig": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "protocolType": {
+                                        "type": "string"
+                                      },
+                                      "transportType": {
+                                        "type": "string"
+                                      },
+                                      "schedulerType": {
+                                        "type": "string"
+                                      },
+                                      "sourceStartPort": {
+                                        "type": "string"
+                                      },
+                                      "destinationStartPort": {
+                                        "type": "string"
+                                      },
+                                      "packetLength": {
+                                        "type": "string"
+                                      },
+                                      "throughput": {
+                                        "type": "string"
+                                      },
+                                      "terminationPort": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "protocolType",
+                                      "transportType",
+                                      "schedulerType",
+                                      "sourceStartPort",
+                                      "destinationStartPort",
+                                      "packetLength",
+                                      "throughput",
+                                      "terminationPort"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "numTTG",
+                              "mbtaConfig"
+                            ]
+                          }
+                        ]
+                      },
+                      "tcpConfig": {
+                        "type": "object",
+                        "properties": {
+                          "tunPrimaryAddress": {
+                            "type": "string"
+                          },
+                          "ttgPrimaryAddress": {
+                            "type": "string"
+                          },
+                          "maxPollEvents": {
+                            "type": "string"
+                          },
+                          "bufferSize": {
+                            "type": "string"
+                          },
+                          "writeMode": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "tunPrimaryAddress",
+                          "ttgPrimaryAddress",
+                          "maxPollEvents",
+                          "bufferSize",
+                          "writeMode"
+                        ]
+                      },
+                      "throughputHike": {
+                        "type": "string"
+                      },
+                      "overloadedHike": {
+                        "type": "string"
+                      },
+                      "isIPV6": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "tacAddress",
+                      "appServerAddress",
+                      "ttgAddress",
+                      "epcPDNAddress",
+                      "uePerCell",
+                      "connPerUE",
+                      "pdnType",
+                      "groups",
+                      "tcpConfig",
+                      "throughputHike",
+                      "overloadedHike",
+                      "isIPV6"
+                    ]
+                  }
+                },
+                "required": [
+                  "config"
+                ]
+              },
+              "scenarioSetup": {
+                "type": "object",
+                "properties": {
+                  "numScenarios": {
+                    "type": "string"
+                  },
+                  "scenarioNode": {
+                    "type": "object",
+                    "properties": {
+                      "fieldScenarios": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      },
+                      "scenario": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "fieldScenarios",
+                      "scenario"
+                    ]
+                  }
+                },
+                "required": [
+                  "numScenarios",
+                  "scenarioNode"
+                ]
+              }
+            },
+            "required": [
+              "lteSetup",
+              "endcSetup",
+              "uplinkTTG",
+              "downlinkTTG",
+              "scenarioSetup"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "numSetup",
+      "technology",
+      "setups"
+    ]
+  }
